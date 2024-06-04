@@ -6,27 +6,32 @@
   <title>Cadastro - Sobre Gatos</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./src/css/cadastro.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="src/js/RegisterScript.js" defer></script>
 </head>
 <body>
-  <div class="register-container">
-    <h1>Cadastro</h1>
-    <form id="registerForm">
-      <div class="form-group">
-        <label for="name">Nome</label>
-        <input type="text" id="name" placeholder="Digite seu nome">
-      </div>
-      <div class="form-group">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Digite seu e-mail">
-      </div>
-      <div class="form-group">
-        <label for="password">Senha</label>
-        <input type="password" id="password" placeholder="Digite sua senha">
-      </div>
-      <div class="form-group">
-        <button type="submit">Cadastrar</button>
-      </div>
-      <div class="form-group">
-        <a href="login.html">Já tem acesso? Faça login</a>
-      </div>
-    
+<div class="register-container">
+  <h1>Cadastro</h1>
+  <form id="registerForm">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input type="text" id="name" placeholder="Digite seu nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Senha</label>
+      <input type="password" id="password" placeholder="Digite sua senha" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Cadastrar</button>
+    </div>
+    <div class="form-group">
+      <a href="login.html">Já tem acesso? Faça login</a>
+    </div>
+  </form>
+</div>
+</body>
+</html>

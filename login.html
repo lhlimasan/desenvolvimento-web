@@ -6,42 +6,28 @@
   <title>Login - Sobre Gatos</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./src/css/login.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./src/js/LoginScript.js" defer></script>
 </head>
 <body>
-  <div class="login-container">
-    <h1>Login</h1>
-    <form id="loginForm">
-      <div class="form-group">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Digite seu e-mail">
-      </div>
-      <div class="form-group">
-        <label for="password">Senha</label>
-        <input type="password" id="password" placeholder="Digite sua senha">
-      </div>
-      <div class="form-group">
-        <button type="submit">Entrar</button>
-      </div>
-      <div class="form-group">
-        <a href="cadastro.html">Não tem acesso? Cadastre-se</a>
-      </div>
-    </form>
-  </div>
-
-  <script>
-    const loginForm = document.getElementById('loginForm');
-    loginForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
-
-      // Implementação da lógica de login
-      // Aqui você deve verificar as credenciais do usuário e salvar as informações no localStorage
-      localStorage.setItem('loggedInUser', 'Nome do Usuário');
-      localStorage.setItem('loggedInEmail', email);
-      localStorage.setItem('loggedInPassword', password);
-      window.location.href = 'index.html';
-    });
-  </script>
+<div class="login-container">
+  <h1>Login</h1>
+  <form id="loginForm">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Senha</label>
+      <input type="password" id="password" placeholder="Digite sua senha" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Entrar</button>
+    </div>
+    <div class="form-group">
+      <a href="cadastro.html">Não tem acesso? Cadastre-se</a>
+    </div>
+  </form>
+</div>
 </body>
 </html>
