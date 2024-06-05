@@ -23,9 +23,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     axios.post('http://api.wescleydev.com/api/login', { email, password })
         .then(response => {
-            const { token } = response.data;
+            const token = response.data;
             localStorage.setItem('authToken', token);
-            console.log(token)
+            localStorage.setItem('loggedInUserEmail', email)
 
             alert('Login realizado com sucesso!');
             window.location.href = 'index.html';
