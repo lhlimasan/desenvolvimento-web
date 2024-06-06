@@ -4,6 +4,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value.trim();
+    const apiUrl = 'http://api.desenvolvimento.web.com/api'
 
     // Validações
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -23,7 +24,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
         password: password
     };
 
-    axios.post('http://api.wescleydev.com/api/users', user)
+    axios.post(`${apiUrl}/users`, user)
         .then(response => {
             alert('Usuário cadastrado com sucesso!');
             window.location.href = '/login.html';

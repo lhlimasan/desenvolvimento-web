@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiUrl = 'http://api.wescleydev.com/api';
+    const apiUrl = 'http://api.desenvolvimento.web.com/api';
     const token = localStorage.getItem('authToken'); // Recupera o token do localStorage
 
     // Função para buscar usuários

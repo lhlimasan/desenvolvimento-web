@@ -3,6 +3,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value.trim();
+    const apiUrl = 'http://api.desenvolvimento.web.com/api'
 
     // Validações
     if (email === "") {
@@ -21,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         return;
     }
 
-    axios.post('http://api.wescleydev.com/api/login', { email, password })
+    axios.post(`${apiUrl}/login`, { email, password })
         .then(response => {
             const token = response.data;
             localStorage.setItem('authToken', token);
