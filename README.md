@@ -14,6 +14,8 @@ Esse projeto é separado entre API e Front-end, sendo a api zipada e o front est
 
 
 2. Entre dentro da pasta do projeto pelo explorador de arquivos e extraia a API e o Servidor Docker(Utilize a opção "Extrair aqui")
+
+
    ![Explorador](https://i.ibb.co/CHxsgqJ/Captura-de-tela-2024-06-05-202926.png)
 
 3. Para utilização do servidor docker no proximo passo, precisamos instalar o wsl 2, siga o artigo a seguir para instalar: [Artigo de instalação wsl 2](https://marcelo-albuquerque.medium.com/como-instalar-o-wsl-2-no-windows-10-3e26d99d7161)
